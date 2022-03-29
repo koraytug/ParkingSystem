@@ -1,0 +1,25 @@
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 100px;
+}
+
+.op-item{
+    display: flex;
+    flex-direction: row;
+    border: 2px;
+    border-style: solid;
+    width: 200px;
+    height: 50px; 
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.op-item:hover {
+  background-color: #EFF2F5;
+}
+ 
