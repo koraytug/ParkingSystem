@@ -12,6 +12,7 @@ const HomePage = (): JSX.Element => {
             history("/calculate-price");
         }}>Calculate Price</div>
         <div className='op-item'>Pay Ticket</div>
+        <div className='op-item'>Check Ticket State</div>
     </div>)
 
 };

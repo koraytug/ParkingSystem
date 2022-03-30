@@ -70,7 +70,6 @@ const Payment = (): JSX.Element => {
                 </>
             }
 
-
         </div>
     )
 };
