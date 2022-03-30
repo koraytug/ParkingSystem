@@ -16,7 +16,7 @@ const GetTicket = (): JSX.Element => {
             return;
         }
         const cachedTicket: ITicket = JSON.parse(window.localStorage.getItem("ticket") || "");
-         
+
         if (cachedTicket && cachedTicket && cachedTicket !== { entranceDate: "", ticketBarcode: "" }) {
             setSucceeded(true)
             setTicket(cachedTicket);

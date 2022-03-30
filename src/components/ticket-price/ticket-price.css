@@ -52,7 +52,7 @@
     border-style: dashed;
 }
 
-.date-row{
+.calc-date-row{
     display: flex;
     flex-direction: row; 
     width: 100%;

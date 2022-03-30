@@ -47,10 +47,10 @@ const TicketPrice = (props: TicketPriceProps): JSX.Element => {
                 Parking Receipt
             </div>
 
-            <div className="date-row">
+            <div className="calc-date-row">
                 From: {fromDateTime}
             </div>
-            <div className="date-row">
+            <div className="calc-date-row">
                 To: {toDateTime}
             </div>
             <div className="price-row">

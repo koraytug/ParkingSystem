@@ -57,3 +57,35 @@ export const getTicketTime = (strDate: string): string => {
 
     return `${hours}:${minutes}:${seconds}`;
 };
+
+export async function findTicket(barcode: string): Promise<any> {
+    try {
+        const response = await fetch(`http://localhost:4400/find_ticket?barcode=${barcode}`, { mode: "cors" });
+
+        if (!response.ok) {
+            throw new Error(response.statusText);
+        }
+
+        const data = await response.json();
+
+        return Promise.resolve(data);
+    } catch (error: any) {
+        return Promise.reject(error);
+    }
+}
+
+export async function payTicket(barcode: string, paymentMethod: string): Promise<any> {
+    try {
+        const response = await fetch(`http://localhost:4400/pay_ticket?barcode=${barcode}&paymentmethod=${paymentMethod}`, { mode: "cors" });
+
+        if (!response.ok) {
+            throw new Error(response.statusText);
+        }
+
+        const data = await response.json();
+
+        return Promise.resolve(data);
+    } catch (error: any) {
+        return Promise.reject(error);
+    }
+}

@@ -1,0 +1,77 @@
+.payment-page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-top: 50px;
+}
+
+.payment-calculate-button{
+    display: flex;
+    flex-direction: row;
+    background-color: #EFF2F5;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: black;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.payment-calculate-button:hover{
+     background-color: #F0AC44;
+}
+
+.payment-barcode-container{
+    display: flex;
+    flex-direction: row;
+}
+.payment-barcode-container-column{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.payment-calculate-title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.payment-input-barcode{
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.payment-payment-method-title{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.payment-radio-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.method-title-row{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.amount-title-row{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
