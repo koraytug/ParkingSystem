@@ -6,13 +6,14 @@ const HomePage = (): JSX.Element => {
 
     return (<div className="homepage-container">
         <div className='op-item' onClick={() => {
-            history("/get-ticket");
+            history("/get-ticket"); window.localStorage.removeItem("ticket");
         }}>Get Ticket</div>
         <div className='op-item' onClick={() => {
             history("/calculate-price");
         }}>Calculate Price</div>
         <div className='op-item'>Pay Ticket</div>
         <div className='op-item'>Check Ticket State</div>
+        <div className='op-item'>Check Free Space</div>
     </div>)
 
 };

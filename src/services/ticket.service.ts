@@ -1,5 +1,3 @@
-// import IGetTicketResponse from "../models/iget-ticket-response";
-
 export default async function getTicket(): Promise<any> {
     try {
         const response = await fetch("http://localhost:4400/get_new_ticket/", { mode: "cors" });
@@ -15,16 +13,12 @@ export default async function getTicket(): Promise<any> {
 
 export async function getCalculatedPrice(barcode: string): Promise<any> {
     try {
-        console.log("1")
         const response = await fetch(`http://localhost:4400/get_calculated_price?barcode=${barcode}`, { mode: "cors" });
-        console.log("2")
+
         if (!response.ok) {
-            console.log("3")
             throw new Error(response.statusText);
         }
-        console.log("4")
         const data = await response.json();
-        console.log("5", data)
         return Promise.resolve(data);
     } catch (error: any) {
         return Promise.reject(error);
@@ -112,6 +106,22 @@ export async function getTicketStatus(barcode: string): Promise<any> {
 export async function setOpenTheDoor(barcode: string): Promise<any> {
     try {
         const response = await fetch(`http://localhost:4400/set_door_exit?barcode=${barcode}`, { mode: "cors" });
+
+        if (!response.ok) {
+            throw new Error(response.statusText);
+        }
+
+        const data = await response.json();
+
+        return Promise.resolve(data);
+    } catch (error: any) {
+        return Promise.reject(error);
+    }
+}
+
+export async function checkFreeSpaces(): Promise<any> {
+    try {
+        const response = await fetch("http://localhost:4400/get_free_spaces", { mode: "cors" });
 
         if (!response.ok) {
             throw new Error(response.statusText);

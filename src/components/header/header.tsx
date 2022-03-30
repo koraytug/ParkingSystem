@@ -10,10 +10,11 @@ function Header() {
             </div>
             <nav className="header-links">
                 <Link to="/" className="link">Home</Link>
-                <Link to="/get-ticket" className="link">Get Ticket</Link>
+                <Link to="/get-ticket" className="link" onClick={() => { window.localStorage.removeItem("ticket"); }}>Get Ticket</Link>
                 <Link to="/calculate-price" className="link">Calculate Price</Link>
                 <Link to="/payment" className="link">Pay Ticket</Link>
                 <Link to="/check-ticket-state" className="link">Check Ticket State</Link>
+                <Link to="/check-free-spaces" className="link">Check Free Spaces</Link>
             </nav>
         </div>
     );

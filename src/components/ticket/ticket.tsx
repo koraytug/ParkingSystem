@@ -26,7 +26,7 @@ const Ticket = (props: TicketProps): JSX.Element => {
 
 
     const { inputRef } = useBarcode({
-        value: props.ticket.ticketBarcode, //"react-barcodes",
+        value: props.ticket.ticketBarcode,
         options: {
             background: "#ffffff",
             height: 70

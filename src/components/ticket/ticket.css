@@ -5,6 +5,7 @@
     width: 200px;
     margin-top: 50px;
 }
+
 .ticket-container{
     display: flex;
     flex-direction: column;   
@@ -14,7 +15,6 @@
     padding: 10px;
 }
 
-
 .ticket-title{
     display: flex;
     flex-direction: row; 
@@ -22,16 +22,13 @@
     justify-items: center;
 }
 
-
 .ticket-logo-column{
     display: flex;
     flex-direction: column; 
     width: 40px;
     height: 40px;
-    
-    /* align-items: center; */
-    /* justify-items: center; */
 }
+
 .ticket-company-name{
     display: flex;
     flex-direction: column; 
@@ -76,8 +73,6 @@
     font-size: 14px; 
     justify-content: center;
     align-items: center;
-    /* margin: 10px 0px 10px 0px; */
-    
 }
 
 .thank-row{
@@ -96,6 +91,7 @@
     border-color: black;
     border-style: dotted;
 }
+
 .barcode-row{
     display: flex;
     flex-direction: row; 
@@ -105,6 +101,4 @@
 
 .barcode{
     margin-top: -30px;
-    /* width: 100px; */
-    /* height: 30px; */
 }

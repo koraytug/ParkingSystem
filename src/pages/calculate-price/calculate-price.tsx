@@ -18,7 +18,6 @@ const CalculatePrice = (): JSX.Element => {
             setCalculatedPriceObj(calculatedPrice);
             setSucceeded(true);
         } catch (err) {
-            console.error(err);
             setSucceeded(false);
         }
     }

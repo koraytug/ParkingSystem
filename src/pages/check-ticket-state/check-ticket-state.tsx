@@ -25,12 +25,8 @@ const CheckTicketState = (): JSX.Element => {
     const openTheDoor = async () => {
         try {
             await setOpenTheDoor(barcodeNumber);
-
-            // setTicketStatus(status);
-            // setSucceeded(true);
         } catch (err) {
             alert("Door Could not Open!")
-            // setSucceeded(false);
         }
     }
 
