@@ -12,17 +12,7 @@
     margin-left: 50px;
     width: 100px;
     height: 100px;
-}
-
-/* .text-column{
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-    font-size: 32px; 
-    font-weight: bolder;
-    color:#002340 ;
-    text-decoration: underline;
-} */
+} 
 
  .header-links {
     display: flex;
@@ -32,6 +22,6 @@
  }
  
  .link{
-       padding: 10px 15px;
-  cursor: pointer;
+    padding: 10px 15px;
+    cursor: pointer;
  }

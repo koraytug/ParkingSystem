@@ -1,3 +1,5 @@
+// import IGetTicketResponse from "../models/iget-ticket-response";
+
 export default async function getTicket(): Promise<any> {
     try {
         const response = await fetch("http://localhost:4400/get_new_ticket/", { mode: "cors" });
@@ -6,6 +8,24 @@ export default async function getTicket(): Promise<any> {
         }
         const data = await response.json();
         return Promise.resolve(data.data);
+    } catch (error: any) {
+        return Promise.reject(error);
+    }
+}
+
+export async function getCalculatedPrice(barcode: string): Promise<any> {
+    try {
+        console.log("1")
+        const response = await fetch(`http://localhost:4400/get_calculated_price?barcode=${barcode}`, { mode: "cors" });
+        console.log("2")
+        if (!response.ok) {
+            console.log("3")
+            throw new Error(response.statusText);
+        }
+        console.log("4")
+        const data = await response.json();
+        console.log("5", data)
+        return Promise.resolve(data);
     } catch (error: any) {
         return Promise.reject(error);
     }

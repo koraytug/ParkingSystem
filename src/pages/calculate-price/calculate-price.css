@@ -1,0 +1,49 @@
+.calculate-page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-top: 50px;
+}
+
+.ticket-calculate-button{
+    display: flex;
+    flex-direction: row;
+    background-color: #EFF2F5;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: black;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ticket-calculate-button:hover{
+     background-color: #F0AC44;
+}
+
+.barcode-container{
+    display: flex;
+    flex-direction: row;
+}
+.barcode-container-column{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.calculate-title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.input-barcode{
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}

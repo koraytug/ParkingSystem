@@ -15,7 +15,7 @@ const Ticket = (props: TicketProps): JSX.Element => {
     const [date, setDate] = useState("");
 
     useEffect(() => {
-        if (props.ticket !== undefined) { 
+        if (props.ticket !== undefined) {
             const date = getTicketDate(props.ticket.entranceDate);
             const time = getTicketTime(props.ticket.entranceDate)
             setDate(date);
@@ -26,7 +26,7 @@ const Ticket = (props: TicketProps): JSX.Element => {
 
 
     const { inputRef } = useBarcode({
-        value: props.ticket.ticketBarcode, //"react-barcodes",
+        value: props.ticket.ticketBarcode,
         options: {
             background: "#ffffff",
             height: 70

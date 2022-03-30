@@ -8,6 +8,9 @@ const HomePage = (): JSX.Element => {
         <div className='op-item' onClick={() => {
             history("/get-ticket");
         }}>Get Ticket</div>
+        <div className='op-item' onClick={() => {
+            history("/calculate-price");
+        }}>Calculate Price</div>
     </div>)
 
 };

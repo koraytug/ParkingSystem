@@ -1,0 +1,104 @@
+.ticket-container{
+    display: flex;
+    flex-direction: column;   
+    height: 320px;
+    width: 200px;
+    margin-top: 50px;
+}
+
+.ticket-container{
+    display: flex;
+    flex-direction: column;   
+    height: 300px;
+    width: 200px;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.ticket-title{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-items: center;
+}
+
+.ticket-logo-column{
+    display: flex;
+    flex-direction: column; 
+    width: 40px;
+    height: 40px;
+}
+.ticket-company-name{
+    display: flex;
+    flex-direction: column; 
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.title-receipt{
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 10px 0px;
+    border-right: 0px ;
+    border-left: 0px ;
+    border-color: black;
+    border-style: dashed;
+}
+
+.date-row{
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    height: 30px;
+    font-size: 14px; 
+    justify-content: left;
+    align-items: center;
+    /* margin: 10px 0px 10px 0px; */
+    
+}
+
+.price-row{
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    height: 30px;
+    font-size: 16px; 
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;    
+    
+}
+
+.thank-row{
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px 10px 0px;
+    border-right: 0px ;
+    border-left: 0px ;
+     border-bottom: 0px ;
+    border-color: black;
+    border-style: dotted;
+}
+.barcode-row{
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    height: 30px;
+}
+
+.barcode{
+    margin-top: -33px;
+}
