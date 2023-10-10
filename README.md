@@ -1,4 +1,4 @@
-# Platogo Parking Lot codding chalange (Frontend React project)
+# Parking Lot codding chalange (Frontend React project)
 
 ## Installation
 
